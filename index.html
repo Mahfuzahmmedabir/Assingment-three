@@ -5,6 +5,7 @@
   <meta charset="UTF-8" dtaa-theme="dark">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
   <!-- daisyui and tailwind -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -25,7 +26,10 @@
             'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
             'arrow_bg_color': '#ABEF5F',
             'border-color': '#E9E9E9'
-          }
+          },
+          backgroundImage: {
+            imgae: "url('./assets/bg.jpg')",
+          },
         }
       },
     }
@@ -37,7 +41,8 @@
   </style>
 </head>
 
-<body class="manrope">
+<body class="manrope  ">
+
   <header class="w-11/12 mx-auto  ">
     <nav>
       <!-- nav-section -->
@@ -76,12 +81,12 @@
           <i class="fa-solid fa-magnifying-glass bg-50 p-3 rounded-full mx-6 text-xl"></i>
           <i class="fa-solid fa-cart-shopping mx-6"></i>
           <button class="bg-arrow_bg_color p-2 px-3 rounded-full font-bold">Book Consult
-            <i class="fa-solid fa-arrow-right -rotate-45 mx-3 bg-black p-1.5 rounded-full text-white "></i></button>
+            <i class="fa-solid fa-arrow-right -rotate-45 mx-3 bg-black p-2 rounded-full text-white "></i></button>
         </div>
       </div>
     </nav>
     <!-- img and text section -->
-    <section class="my-12">
+    <section class="my-12 ">
       <div>
         <!-- img section -->
         <div><img class=" mx-auto" src="assets/banner.png" alt=""></div>
@@ -102,9 +107,9 @@
     </section>
   </header>
   <!-- Main section -->
-  <main class=" mx-auto">
+  <main class="w-11/12 mx-auto">
     <section class=" ">
-      <div class=" bg-base-200   ">
+      <div class=" bg-base-200">
         <div class="hero-content flex-col-reverse  lg:flex-row-reverse 
          mx-auto  ">
           <img src="assets/Rectangle.png" class="rounded-lg shadow-2xl lg:h-[600px] " />
@@ -188,15 +193,15 @@
           metal accents.</p>
       </div>
       <!-- gird img -->
-      <div class="grid grid-cols-1  lg:grid-cols-12 gap-6  mt-10 lg:w-11/12 mx-auto  ">
+      <div class="grid grid-cols-1  lg:grid-cols-12 gap-6  mt-10 lg:w-11/12 mx-auto pb-20  ">
         <!-- frist card -->
         <div class=" lg:flex border rounded-2xl col-span-12 lg:col-span-8 p-2 bg-white">
           <img class="w-full" src="assets/img1.png" alt="">
           <div class="lg:px-9">
             <h2 class="font-extrabold mt-5">Commercial</h2>
             <p>The barn house captivates with its blend of rustic charm and modern sophistication,
-            featuring weathered wood, sleek
-            metal accents. ?</p>
+              featuring weathered wood, sleek
+              metal accents. ?</p>
             <p>
               <button class="py-3 rounded-full font-bold">View Details
                 <i
@@ -236,16 +241,39 @@
         </div>
       </div>
     </section>
-
     <!-- Form section -->
-     <section class="">
-      
-
+    <section class="bg-imgae  bg-no-repeat bg-center	bg-cover mt-2 w-12/12 ">
+      <!-- form text section -->
+      <div class="lg:w-5/12 mx-auto pt-20">
+        <p class="text-center"><button class=" bg-[#ABEF5F33] text-[#494949] p-2 my-4 rounded-2xl font-bold "> <i
+              class="fa-solid fa-arrow-right mx-2"></i>Let's Connect </button></p>
+        <h1 class="text-3xl font-extrabold text-center lg:text-5xl "> Let' Discuss Next Project</h1>
+        <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication,
+          featuring weathered wood, sleek
+          metal accents.</p>
       </div>
-     </section>
 
 
+      <!-- form section -->
+      <form action="" class=" mx-4 mt-7 lg:text-center ">
+        <!-- input  -->
+        <input class="p-3  mb-5 my-9  w-full lg:w-96 rounded-full" type="text" placeholder="First Name*">  <input
+          class="p-3 mb-5 lg:ml-6  w-full lg:w-96 rounded-full" type="text" placeholder="Last Name*"> <br> <input
+          class="p-3 mb-5  w-full lg:w-96 rounded-full" type="text" placeholder="Phone Number*"> <input
+          class="p-3 lg:ml-6   w-full lg:w-96 rounded-full" type="text" placeholder="Email Number*"> <br>
+          <!-- textarea -->
+        <textarea class=" w-full text-gray-400  lg:w-7/12 rounded-3xl p-5 mt-5" name="" id="" rows="10" >Write your messge here</textarea> 
+      </form>
+
+      <!-- icon -->
+      <p class=" text-center pb-12"><button class="bg-arrow_bg_color p-2 px-3 rounded-full font-bold lg:w-7/12  mt-7  w-full   ">Send Mail
+        <i class="fa-solid fa-arrow-right -rotate-45 mx-3 bg-black p-2 rounded-full text-white "></i></button></p>
+
+
+
+    </section>
   </main>
+
 </body>
 
 </html>
